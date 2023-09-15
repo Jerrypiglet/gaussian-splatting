@@ -99,7 +99,12 @@ Tip: Downloading packages and creating a new environment with Conda can require 
 conda config --add pkgs_dirs <Drive>/<pkg_path>
 conda env create --file environment.yml --prefix <Drive>/<env_path>/gaussian_splatting
 conda activate <Drive>/<env_path>/gaussian_splatting
+
 ```
+
+#### [Rui]
+
+If running into issues install submodules, try remove pytorch packages from the conda env file, and instead install manually with one of the [scripts](https://pytorch.org/get-started/previous-versions/). Then `pip install submodules/*` to install the submodules.
 
 #### Modifications
 
